@@ -1,5 +1,10 @@
 #!/bin/bash
 
 echo ""
-echo "Converter String para letras minúsculas" | tr '[:upper]' '[:lower]'
+echo "Usando tr"
+echo "Converter String para letras minúsculas" | tr '[:upper:]' '[:lower:]'
+echo ""
+
+echo "Usando AWK"
+echo "Converter String para letras minúsculas" | awk '{print tolower($0)}'
 echo ""
