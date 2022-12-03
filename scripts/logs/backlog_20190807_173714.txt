@@ -1,0 +1,31 @@
+
+## Versao/Commit da app "cartola-api-qa02" ##
+Version: 
+Commit: 
+
+## Tsuru App info ##
+
+
+Hosts:
+
+## MySQL (dbaas) ##
+Hosts:
+
+## Redis Cluster ##
+Hosts:
+
+## Redis Sentinel ##
+Hosts:
+
+## Redis (farm) ##
+Hosts:
+
+## MySQL - write ##
+Hosts:
+
+## MySQL - read ##
+Hosts:
+
+## Dependencias - libs ##
+Arquivo dep.tsuru gerado com sucesso!
+

@@ -1,9 +1,5 @@
 #!/bin/bash
 
-###################################
-## ARQUIVO GERENCIADO PELO PROJETO 
-###################################
-
 result=/tmp/resultado_"$HOSTNAME"_`date +%Y%m%d_%H%M%S`.txt
 avg=/tmp/media_"$HOSTNAME"_`date +%Y%m%d_%H%M%S`.txt
 d_ini=$(date +%s)
@@ -34,9 +30,7 @@ do
     echo -e $header
     i=0
   fi
-
-  vms=$(vmstat 1 2 | tail -n 1)
-  memory=$(free -m | grep 'buffers/cache:' | awk '{printf("%d\n", $4*100/($3+$4))}')
+  # Com o valor Inteiro
   loadavg=$(more /proc/loadavg | cut -d' ' -f1)
   procr=$(echo $vms | sed 's/ /-/g' | cut -f1 -d-)
   idlecpu=$(echo $vms | sed 's/ /-/g' | cut -f15 -d-)
@@ -56,14 +50,6 @@ do
 
   d_end=$(date +%s)
   t=$(expr $d_end - $d_ini)
-
-  sleep $2
-done
-
-avg_cpu=$(cat $result | cut -d, -f2 | awk -v soma=0 '{ soma+=$1 }; END { printf ("%.2f\n", soma/NR) }')
-avg_memoria=$(cat $result | cut -d, -f3 | awk -v soma=0 '{ soma+=$1 }; END { printf ("%.2f\n", soma/NR) }')
-avg_load=$(cat $result | cut -d, -f4 | awk -v soma=0 '{ soma+=$1 }; END { printf ("%.2f\n", soma/NR) }')
-avg_tcp=$(cat $result | cut -d, -f5 | awk -v soma=0 '{ soma+=$1 }; END { printf ("%d\n", soma/NR) }')
 
 echo
 echo

@@ -1,0 +1,46 @@
+
+## Versao/Commit da app "cartola-api-qa02" ##
+Version: processamento
+Commit: 590d72296486430a807d3eec5abd11bbde1057b6
+
+## Tsuru App info ##
+Pool: qa02-pool-g
+Address: cartola-api-qa02.gcloud.qa02.globoi.com
+Hosts:
+
+## MySQL (dbaas) ##
+Hosts:
+  - competicao-01-15581103291.qa2.mysql.globoi.com
+
+## Redis Cluster ##
+Hosts:
+  - redisqa2cl-01-155740980389.qa2.redis.globoi.com
+  - redisqa2cl-02-155740980389.qa2.redis.globoi.com
+  - redisqa2cl-03-155740980389.qa2.redis.globoi.com
+  - redisqa2cl-04-155740980389.qa2.redis.globoi.com
+  - redisqa2cl-05-155740980389.qa2.redis.globoi.com
+  - redisqa2cl-06-155740980389.qa2.redis.globoi.com
+
+## Redis Sentinel ##
+Hosts:
+  - rediscarto-01-155968417274.sentinel.globoi.com
+  - rediscarto-02-155968417274.sentinel.globoi.com
+  - rediscarto-03-155968417274.sentinel.globoi.com
+
+## Redis (farm) ##
+Hosts:
+  - 10.224.208.8:10058
+  - 10.224.208.8:30058
+  - 10.224.208.8:40058
+
+## MySQL - write ##
+Hosts:
+  - cmaq24mp30ld07.globoi.com:3306
+
+## MySQL - read ##
+Hosts:
+  - cmaq24mp30ld08.globoi.com:3306
+
+## Dependencias - libs ##
+Arquivo dep.tsuru gerado com sucesso!
+
