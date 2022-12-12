@@ -1,0 +1,20 @@
+23 - Variáveis especiais
+
+Variável	Parâmetros Posicionais
+--------    ----------------------
+$0	        Parâmetro número 0 (nome do comando ou função)
+$1	        Parâmetro número 1 (da linha de comando ou função)
+...	        Parâmetro número N ...
+$9	        Parâmetro número 9 (da linha de comando ou função)
+${10}	    Parâmetro número 10 (da linha de comando ou função)
+...	        Parâmetro número NN ...
+$#	        Número total de parâmetros da linha de comando ou função
+$*	        Todos os parâmetros, como uma string única
+$@	        Todos os parâmetros, como várias strings protegidas
+
+Variável	Miscelânia
+--------    ----------
+$$	        Número PID do processo atual (do próprio script)
+$!	        Número PID do último job em segundo plano
+$_	        Último argumento do último comando executado
+$?	        Código de retorno do último comando executado

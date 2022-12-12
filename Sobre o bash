@@ -1,0 +1,37 @@
+O que é ?
+
+Um interpretador de comandos entre o usuário e o LINUX
+
+Usam interfaces de comandos
+
+CLI - Command Line Interface ou Interface de Linha de comando
+
+GUI - Graphic User Interface ou Interface Gráfica do Usuário
+
+Arquivo executável armazenado em 
+
+#!/bin/sh - Bourne Shell
+
+ou 
+
+#!/bin/bash - Bourne Again Shell (GNU) - Brian Fox
+
+
+Para ver qual é o shell padrão:
+
+$ printenv SHELL
+
+Para ver todos os shells disponíveis:
+
+$ cat /etc/shells
+
+Para mudar o shell padra
+
+$ chsh -s /bin/ash
+
+Veja o Shell de todos os usuários do sistema
+
+cat /etc/passwd | cut -d: -f1,7
+
+
+

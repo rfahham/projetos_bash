@@ -1,0 +1,20 @@
+27 - Formatadores do comando date
+
+Formato	Descrição
+%a	Nome do dia da semana abreviado (Dom..Sáb)
+%A	Nome do dia da semana (Domingo..Sábado)
+%b	Nome do mês abreviado (Jan..Dez)
+%B	Nome do mês (Janeiro..Dezembro)
+%c	Data completa (Sat Nov 04 12:02:33 EST 1989)
+%y	Ano (dois dígitos)
+%Y	Ano (quatro dígitos)
+%m	Mês (01..12)
+%d	Dia (01..31)
+%j	Dia do ano (001..366)
+%H	Horas (00..23)
+%M	Minutos (00..59)
+%S	Segundos (00..60)
+%s	Segundos desde 1º de Janeiro de 1970
+%%	Um % literal
+%t	Um TAB
+%n	Uma quebra de linha

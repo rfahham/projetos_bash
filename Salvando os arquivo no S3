@@ -1,0 +1,59 @@
+Salvando os arquivo no S3
+
+Criar na home um diretório chamado de backup_amazon. Vá até a sua home com o comando:
+
+$ cd ~
+
+E depois digite:
+
+$ mkdir backup_amazon
+
+
+crie um novo script chamado de backup-amazon.sh
+
+#!/bin/bash
+
+//Definindo o caminho:
+
+$ CAMINHO_BACKUP=/home/(usuário)/backup_amazon
+$ cd $CAMINHO_BACKUP
+
+// criar um diretório com a data atual 
+
+data=$(date +%F)
+if [ ! -d $data ]
+then
+    mkdir $data
+fi
+
+// Na sequência, vamos através de um laço for pegar cada tabela do banco mutillidae e iremos salvar no diretório com a data que deverá estar dentro do diretório com o caminho do backup:
+
+tabelas=$(mysql -u root mutillidae -e "show tables;" | grep -v Tables)
+for tabela in $tabelas
+do
+    mysqldump -u root mutillidae $tabela > $CAMINHO_BACKUP/$data/$tabela.sql
+done
+
+aws s3 sync $CAMINHO_BACKUP s3://[nome do seu bucket]
+
+
+Salvar o arquivo
+
+
+Como nós vimos, vamos programar para esse script ser executado uma vez por dia através do crontab, salve as alterações do script e posteriormente, dê permissão de execução com o comando
+
+$ chmod +x backup-amazon.sh
+
+
+Na sequência abra o crontab com o comando:
+
+$ sudo crontab -e
+
+22 10 * * * [caminho completo para o script backup-amazon.sh]
+
+
+Salve as alterações feitas no crontab e depois quando for aproximadamente o horário colocado no crontab vá para seu bucket na Amazon. Qual é o resultado?
+
+IMPORTANTE: Uma vez que o exercício for finalizado, remova a linha que colocamos no crontab, pois do contrário esses dados serão enviados todos os dias para o bucket da Amazon, consumindo assim os recursos.
+
+

@@ -1,0 +1,6 @@
+Transformando Minúsculas em Maíusculas
+
+$ echo get | awk '{ print toupper($1) }'
+
+saída: GET 
+

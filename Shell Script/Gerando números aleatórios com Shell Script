@@ -1,0 +1,34 @@
+Gerando números aleatórios com Shell Script
+
+http://angelitomg.com/blog/gerando-numeros-aleatorios-com-shell-script/
+
+https://www.vivaolinux.com.br/dica/Numeros-aleatorios-em-shell-script
+
+
+Quanto estamos na linha de comando dos sistemas *nix, temos uma variável que contém um valor aleatório entre 0 e 32767. Para obter o número atual basta imprimir o conteúdo da variável:
+
+echo $RANDOM
+
+Para gerar um número entre uma determinada faixa, basta obter o resto da divisão do número aleatório pelo número desejado, como em:
+
+echo $(($RANDOM % 10))
+
+O comando acima irá gerar um número aleatório entre 0 e 9. Se for necessário gerar um número entre 1 e 10 por exemplo, basta adicionar 1 ao resultado:
+
+echo $((($RANDOM %10) + 1))
+
+
+
+Para sortear um número entre 1 e 10
+
+echo $[ 1 + $[ RANDOM % 10 ]]
+
+Para sortear um número entre 1 e 50
+
+echo $[ 1 + $[ RANDOM % 50 ]]
+
+Para sortear um número entre 50 e 1000
+
+echo $[ 50 + $[ RANDOM % 1000 ]]
+
+E por aí vai. Boa sorte!

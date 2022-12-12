@@ -1,0 +1,15 @@
+26 - Escapes reconhecidos pelo comando echo
+
+Escape	Lembrete	Descrição
+\a	    Alerta	    Alerta (bipe)
+\b	    Backspace	Caractere Backspace
+\c	    EOS	        Termina a string
+\e	    Escape	    Caractere Esc
+\f	    Form feed	Alimentação
+\n	    Newline	    Linha nova
+\r	    Return	    Retorno de carro
+\t	    Tab	        Tabulação horizontal
+\v	    Vtab	    Tabulação vertical
+\\	    Backslash	Barra invertida \ literal
+\nnn	Octal	    Caractere cujo octal é nnn
+\xnn	Hexa	    Caractere cujo hexadecimal é nn

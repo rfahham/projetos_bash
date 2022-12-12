@@ -1,0 +1,1 @@
+find nomedodiretorio/ -name z.* -exec rm {} \;

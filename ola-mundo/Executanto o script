@@ -1,0 +1,16 @@
+Executanto o script
+
+$ sh ola-mundo.sh
+Olá, Mundo!
+
+$ bash ola-mundo.sh
+Olá, Mundo!
+
+ou se o arquivo foi transformado em executável
+
+Tornar um script executável
+
+$ chmod +x [nome do script.sh]
+
+./ola-mundo.sh
+Olá, Mundo!

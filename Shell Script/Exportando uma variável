@@ -1,0 +1,9 @@
+Exportando uma variável
+
+mensagem="Olá mundo!"
+
+$ export mensagem
+
+env | grep mensagem
+
+mensagem=Olá mundo

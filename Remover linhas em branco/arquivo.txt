@@ -1,0 +1,19 @@
+Olá pessoal! Meu nome é Rafael Nercessian, e darei uma introdução sobre o que veremos na primeira parte do curso de Shell Scripting.
+
+Nesse curso nós, você e eu, fomos contratados pela Multillidae para ajudar na automação de algumas tarefas internas.
+
+Os diretores da Multillidae têm uma plataforma de vendas na qual é preciso converter algumas imagens de extensão .jpg para .png. Na primeira parte do curso temos que encontrar uma forma de converter esses arquivos para .png e salvá-los em um respectivo diretório PNG.
+
+Após essa etapa, os diretores da Multillidae resolveram fazer a divisão dessas imagens por área de conhecimento. Veremos como pegar várias imagens que estão espalhadas em vários lugares e convertê-las para seu respectivo formato .png.
+
+Recebemos algumas informações dos diretores, que alguns processos do sistema estão com uma grande quantidade de memória alocada. Como os diretores querem saber quais são esses processos devemos salvá-los em arquivos separados, indicando a hora, a data e a locação em MB respectiva a cada processo, para que os diretores possam ter o histórico desses processos com a maior quantidade de memória alocada.
+
+No final, devemos ter o diretório de log com vários processos salvos, onde cada um deles contém informações de data, hora e a respectiva alocação em megabytes.
+
+Muito bem pessoal, esse foi um resumo da primeira parte do curso de Shell Scripting. Mais tarde, nos encontraremos na segunda parte deste curso, abordando outros assuntos da Multillidae.
+
+Nesse curso, estaremos usando o Ubuntu e é muito importante que vocês tenham feito o curso de Linux, pois abordaremos alguns assuntos vistos nesse curso e também o curso de Lógica de Programação, para facilitar o acompanhamento deste curso.
+
+Aguardo vocês e sejam todos muito bem-vindos!
+
+Boas aulas!

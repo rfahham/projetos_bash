@@ -1,0 +1,130 @@
+Bash vs Zsh
+
+uma comparação de dois shells de linha de comando (atualização de 2019)
+
+https://sunlightmedia.org/bash-vs-zsh/
+
+Se você já usou a linha de comando em um sistema * nix (baseado em Unix ou semelhante ao Unix), é provável que você tenha usado o shell bash. bash (uma abreviatura para “Bourne-again shell”) é o shell padrão para muitos sistemas operacionais do tipo Unix.
+
+Exemplos comuns de sistemas operacionais semelhantes ao Unix incluem GNU / Linux e macOS. Embora existam muitos outros shells para o terminal, um dos shells mais populares ézsh , ou o “shell Z”.
+
+Embora bash e zsh sejam shells poderosos e compartilhem muitos recursos importantes, eles também possuem distinções pelas quais os usuários podem ter preferências diferentes. Esta postagem dará uma visão geral dos recursos e da comparação do bash vs zsh, como você pode definir ambos como seu shell padrão, bem como algumas sugestões de configuração.
+
+Uma curta história de bash e zsh
+Em 1971, a primeira versão do sistema operacional Unix veio com o shell Thompson como shell padrão. Embora não tenha recursos de script, este primeiro shell estabeleceu muitos dos padrões para redirecionamento de entrada / saída. Com o lançamento da versão 7 do Unix em 1979, o novo sistema operacional foi distribuído com o shell Bourne como shell padrão.
+
+
+Criação de bash
+Mais tarde, em 1989, Brian Fox criou o shell Bash para o Projeto GNU como uma alternativa de software viável para o shell Bourne. O Bash introduziu melhorias significativas em relação ao seu antecessor. A mais importante dessas melhorias foi sua capacidade como linguagem de script. Os usuários do bash podiam escrever seus próprios programas para automatizar tarefas.
+
+Esses scripts “shell” eram executáveis ​​digitando o nome do arquivo (normalmente com uma extensão .sh). Na maior parte, o bash pode suportar a maioria dos recursos do shell Bourne e C, além de suas próprias adições exclusivas, incluindo edição de linha de comando e cálculos inteiros.
+
+Criação de zsh
+Pouco depois do surgimento do Bash, um aluno da Universidade de Princeton criou o Z shell ou “zsh”. Junto com esse shell operacional está uma plataforma online baseada na comunidade chamada Oh My Zsh, que apresenta extensões importantes, como plug-ins e temas para zsh. Em junho de 2019, o macOS Catalina anunciou que adotaria o zsh como seu shell padrão em substituição ao bash - uma grande “vitória” para os entusiastas do zsh.
+
+
+
+Bash vs zsh: recursos comuns entre bash e zsh
+
+Na maior parte, bash vs zsh compartilham muitos recursos convenientes que os qualificam como shells altamente eficientes.
+
+O comando z
+Um recurso altamente útil que ambos compartilham é o zcomando, que permite aos desenvolvedores basicamente manter o controle de seus diretórios. Com o zcomando, você pode navegar para um diretório visitado com frequência / recentemente apenas digitando z, seguido pelo nome do diretório. Por exemplo, digamos que você tenha um diretório newProjectlocalizado em ~/src/2018/projects/newProject. Usando esta ferramenta, você pode simplesmente digitar z newProject.
+
+
+Preenchimento automático
+Outro aspecto prático de ambos os shells são as funções de preenchimento automático de guias. Dentro de cada shell, você pode simplesmente digitar o comando, seguido por e -, em seguida, clicar em tab. Esta ação exibirá imediatamente todas as opções disponíveis para aquele comando. Você pode então percorrer as opções disponíveis até encontrar a que está procurando. Ambos os shells oferecem flexibilidade e personalização para seu preenchimento automático de linha de comando.
+
+Auto correção
+Além disso, um utilitário útil para uma empresa de web design em ambos os shells, na maior parte, é a autocorreção. No shell Z, se você cometer um erro de digitação inocente ao escrever o local de um arquivo, por exemplo, a correção ortográfica é incorporada e detectará automaticamente o erro de digitação. Embora não seja um costume bash, você pode facilmente fazer os ajustes necessários para permitir a correção automática usando os comandos shopt cdspelle dirspell.
+
+Personalização de cores
+Mesmo em termos de apelo visual e organização, ambos os shells realizam a tarefa razoavelmente bem. zshirá diferenciar os dois adicionando realce de cor aos diretórios. Além disso, a espessura da fonte ficará um pouco mais em negrito. Isso é extremamente útil para ver o que é um arquivo e o que é um diretório. As cores exatas usadas dependerão das configurações de cor do seu terminal. Por outro lado, os usuários do bash também podem ajustar sua interface para refletir suas necessidades visuais com a LS_colorsvariável.
+
+
+Embora essas sejam apenas algumas das várias ferramentas oferecidas por ambos os shells, elas fornecem um vislumbre de como o bash e zshreconhecidamente se assemelham. No entanto, ambos possuem algumas distinções que podem criar uma preferência por um em relação ao outro entre os desenvolvedores.
+
+
+
+Bash vs zsh: Razões para considerar alternar entre shells
+Os comandos e a interação geral para bash vs zsh são essencialmente idênticos. Conhecimento e familiaridade com uma concha podem ser facilmente traduzidos para a outra sem enfrentar uma curva de aprendizado íngreme. No entanto, ambos os shells têm sua parcela de recursos exclusivos que podem levar os desenvolvedores a declarar uma preferência clara.
+
+
+Por um lado, zshtem a vantagem de uma poderosa comunidade online chamada Oh My Zsh . Oh My ZSH é uma das opções mais antigas e populares para gerenciar zshconfigurações. Oferecendo mais de 250 plug-ins e 140 temas diferentes fornecidos pela comunidade, Oh My ZSH é um ótimo lugar para começar a personalizar o shell z que ainda vem com uma função de atualização automática que mantém seu shell atualizado. Isso permite que os usuários trabalhem em um shell com uma interface mais personalizada, ampliem seu espaço de trabalho com uma variedade de ferramentase tenha acesso a um sistema de suporte pronto para uso conveniente. Por exemplo, uma opção altamente favorável para a interface é um prompt do lado destro ou um prompt lateral que se oculta automaticamente ao digitar caminhos de arquivos longos ou comandos. Mesmo esse nível mínimo de flexibilidade atrai os desenvolvedores para zsh.
+
+Por outro lado, o Bash tem um conjunto impressionante de funções de programação, como looping e construções condicionais, expansões de til e de chave e o uso de apelidos. Ele também tem sua cota de peculiaridades, como ferramentas de invocação poderosas, ser definido em um modo de shell restrito, ter um modo POSIX específico e muito mais. Como o Bash também é um shell mais antigo e estabelecido, também existem recursos online ilimitados para este software.
+
+
+Instalando zsh
+Se você estiver no OS X, é provável que já tenha instalado em seu sistema. Para verificar, execute o seguinte comando:zsh
+
+$ which zsh
+ 
+
+Se já estiver instalado, você deverá receber uma mensagem de saída informando /bin/zshcomo o caminho do arquivo para o shell. Há uma chance remota de que ele exiba outro caminho de arquivo, se por algum motivo você moveu o diretório de instalação padrão. Se você receber uma saída que afirma zsh not found, você precisará instalá-lo via Homebrew . Você pode fazer isso executando o seguinte comando:
+
+$ brew install zsh
+ 
+
+Para distribuições CentOS, Redhat e Fedora Linux, você pode instalar o zsh executando .yum install zsh
+
+Da mesma forma,sudo apt-get install zsh irá instalar o shell nas distribuições Debian e Ubuntu. Você pode começar a usar zsh mesmo se bash estiver definido como seu shell padrão. Para experimentá-lo temporariamente, você pode apenas executar na linha de comando. Isso mudará temporariamente o shell para sua sessão atual. zshPara obter o máximo zsh, também é altamente recomendável atualizar seu terminal em vez de usar o padrão.
+
+Terminal é o padrão no Mac OS X. Embora funcione perfeitamente bem, opções como iTerm 2 ou Hyper oferecem uma enorme quantidade de personalização. Eu pessoalmente uso o iTerm 2, embora o Hyper seja uma excelente escolha entre plataformas cruzadas.
+
+Configurando zsh como seu shell padrão
+Agora que você instalou, tudo que você precisa fazer para defini-lo como seu shell padrão é executar o seguinte comando:zsh
+
+chsh -s /bin/zsh
+
+Para começar a usarzsh , basta fechar a janela do terminal e abrir uma nova - você agora executará em vez do bash.zsh
+
+Voltando ao bash
+Se, por algum motivo, você deseja retornar como seu shell padrão, primeiro descubra onde o está instalado .bash bash 
+
+$ which bash
+
+A saída do caminho padrão deve ser /bin/bash.
+
+Para voltar, basta usar 
+
+$ chsh -s /bin/bash .
+
+A execução também mudará temporariamente o shell para aquela sessão.bash
+
+Configurando zsh
+Como o bash , zsh usa um arquivo dot para armazenar as configurações do usuário ,. Armazenado no diretório inicial ( ). Por padrão, não haverá uma configuração de arquivo de configuração, então você precisará criar um em seu diretório inicial ( )..bashrc.zshrc~/.zshrc~/.zshrc
+
+Da mesma forma, você pode adicionar um arquivo ao seu diretório inicial. é um script que será executado após o login. .zprofile.zprofileVocê pode adicionar qualquer comando que gostaria de executar ao iniciar uma nova instância do shell. Dado o amplo espectro de customização disponível no zsh, pode ser benéfico usar um gerenciador de configuração dedicado. Existem várias opções, incluindo Prezto , Oh My ZSH e Antigen .
+
+Oh meu ZSH
+Para instalar o Oh My ZSH, basta executar
+
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+ 
+
+Isso fará o download do script de shell executável e o instalará em seu sistema. As configurações padrão ao instalar o Oh My ZSH são um ótimo lugar para começar.
+
+Por padrão, ele instalará o tema 'robbyrussell' (seu homônimo vindo do desenvolvedor original do projeto).
+
+Além disso, ele instalará vários plug-ins úteis. Pelo menos alguns aspectos da tela do terminal parecerão imediatamente diferentes.
+
+Ramos Git
+Semelhante ao anterior, Oh My ZSH também adiciona um plugin que exibirá o branch atual em que você está em um projeto. Aparecendo após o diretório de trabalho no prompt de comando, você sempre saberá em qual branch está. gitDessa forma, você nunca precisagit branch saber o branch atual. O plugin também adiciona vários outros recursos úteis.git
+
+No exemplo abaixo, o diretório do projeto está atualmente na ramificação. testsTambém podemos saber que a árvore de trabalho está limpa, sem alterações que você ainda não tenha confirmado. Neste caso, isso é indicado pelo fato de o display estar verde. Assim que você faz uma alteração, a tela muda para outra cor, indicando que há novas alterações a serem confirmadas:
+
+
+
+zsh melhora significativamente o fluxo de trabalho do Git com esses tipos de indicações diretamente no prompt de comando.
+
+Mudando o seu tema
+Conforme mencionado acima, zshvem com centenas de temas diferentes para você escolher. robbyrussellserá o tema padrão, embora você possa alterá-lo facilmente. Para encontrar um novo tema oferecido por Oh My ZSH, você pode visualizar cada um na página Temas no repositório do projeto. Dadas as muitas opções disponíveis, é provável que você encontre uma disponível com quase exatamente os recursos que procura.
+
+Depois de encontrar um de que goste, abra seu arquivo no diretório inicial. .zshrcEntão, você só precisa atualizar a linha começando comZSH_THEME . Coloque o nome do nome que deseja usar (entre aspas) e salve o arquivo. Abrir uma nova sessão de terminal agora deve exibir o novo tema.
+
+
+
+Conclusão
+
+Como vimos neste post zsh vs bash, zshe bash compartilham um conjunto semelhante e impressionante de recursos, mas também têm suas próprias ferramentas distintas. Se você está procurando extensibilidade, maior customização e recursos avançados não encontrados no bash, o zshshell combinado com a estrutura Oh My Zsh é uma excelente escolha. Independentemente do shell que você escolher, a fluência aprimorada na linha de comando oferece inúmeros benefícios em eficiência, automação e melhor compreensão do funcionamento interno do computador.

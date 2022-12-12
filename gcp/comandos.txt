@@ -1,0 +1,3 @@
+ls -la
+clear
+gcloud compute instances list

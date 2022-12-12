@@ -1,0 +1,6 @@
+Cortando e criando um novo arquivo csv
+
+captura as 36 primeiros caracteres de cada linha e salva em outro arquivo
+
+$ cut -c1-36 output-100k-qa3.csv > novo_output.csv
+

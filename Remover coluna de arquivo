@@ -1,0 +1,8 @@
+
+A segunda coluna
+cat <arquivo de origem> | cut -d ";" -f 2 > <arquivo destino>
+
+A sétima coluna
+cat <arquivo de origem> | cut -d ";" -f 7 > <arquivo destino>
+
+

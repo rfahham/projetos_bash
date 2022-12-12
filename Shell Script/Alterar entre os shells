@@ -1,0 +1,7 @@
+Alterar entre os shells
+
+$ chsh -s /bin/zsh
+
+ou 
+
+$ chsh -s /bin/bash

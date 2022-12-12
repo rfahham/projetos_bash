@@ -1,0 +1,3 @@
+Tornar um script executável
+
+$ chmod +x [nome do script.sh]

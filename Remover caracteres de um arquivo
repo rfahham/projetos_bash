@@ -1,0 +1,14 @@
+Remover caracteres de um arquivo
+
+$ cat glbid.txt | sed 's/"//g' > glbid_semaspas2.txt
+
+
+escalacoes_local.txt
+
+
+glbid.csv
+
+
+cat escalacoes_local.txt | sed 's/"//g' > escalacoes_local_semaspas.txt
+
+cat glbid.csv | sed 's/"//g' > glbid.csv_semaspas.txt

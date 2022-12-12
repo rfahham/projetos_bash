@@ -1,0 +1,9 @@
+Bloco de comentários
+
+:<<'comentario'
+
+echo "linha 1"
+echo "linha 2"
+echo "linha 3"
+
+comentario

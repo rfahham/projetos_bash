@@ -1,0 +1,3 @@
+Saber a quantidade de conexões
+
+$ netstat | grep EST | wc -l

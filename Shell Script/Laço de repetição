@@ -1,0 +1,8 @@
+Laço de repetição
+
+#!/bin/bash
+
+for [variável] in  $@
+do
+	Comando
+done

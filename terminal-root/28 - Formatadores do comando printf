@@ -1,0 +1,11 @@
+28 - Formatadores do comando printf
+
+Formato	Descrição
+%d	Número decimal
+%o	Número octal
+%x	Número hexadecimal (a-f)
+%X	Número hexadecimal (A-F)
+%f	Número com ponto flutuante
+%e	Número em notação científica (e+1)
+%E	Número em notação científica (E+1)
+%s	String

@@ -1,0 +1,28 @@
+enviando email
+
+Instalar
+
+$ sudo apt-get install ssmtp -y && sudo apt-get install mailutils -y
+
+$ sudo vi /etc/ssmtp/ssmtp.conf
+
+root=servidor.rfahham@gmail.com
+mailhub=smtp.gmail.com:587
+AuthUser=servidor.rfahham@gmail.com
+AuthPass=Senha
+UseSTARTLS=yes
+
+
+
+if [ $resposta_http -ne 200 ]
+then
+mail -s "Problema no servidor" adm.mutillidae@gmail.com<<del
+Houve um problema no servidor e os usuarios pararam de ter acesso ao conteúdo web.
+del
+    systemctl restart apache2
+fi
+
+
+$ sudo crontab -e
+
+*/2 * * * * /home/rafael/Scripts/monitoracao-servidor.sh

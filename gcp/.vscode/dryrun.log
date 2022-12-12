@@ -1,0 +1,8 @@
+make: Entering directory `/Users/ricardo.fahham/Documents/projetos/gcp'
+clear
+echo "\n\033[33m\n----------------------------------------\033[0m"
+echo "make random - random-status-code.js"
+echo "make hosts - get_hosts_diferentes.js"
+echo "\033[33m----------------------------------------\033[0m"
+make: Leaving directory `/Users/ricardo.fahham/Documents/projetos/gcp'
+ 

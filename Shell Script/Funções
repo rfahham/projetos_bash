@@ -1,0 +1,30 @@
+Funções
+
+funcao(){
+	#instruções
+}
+
+function funcao(){
+	#instruções
+}
+
+
+MinhaFuncao(){
+
+	var1="Essa é "
+	var2="minha função"
+	echo $var1 $var2
+}
+
+MinhaFuncao
+
+
+
+mundo=("Shel Script" "Bash" "GNU" "LINUX" "Debian")
+
+MinhaFuncao(){
+	echo "Estou passando $@parâmetros"
+}
+
+MinhaFuncao $@
+echo $? = pra saber se a execução foi bem sucedida

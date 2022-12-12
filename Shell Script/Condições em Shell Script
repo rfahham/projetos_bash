@@ -1,0 +1,64 @@
+Condições em Shell Script
+
+test 1 = 1 ; echo $?
+
+http://aurelio.net/shell/canivete/#test
+
+-lt - É menor que (LessThan)
+
+-gt - É maior que (GreterThan)
+
+-le - É menor igual (LessEqual)
+
+-ge - É maior igual (GreterEqual)
+
+-eq - É igual (EQual)
+
+-ne - É diferente (Not Equal)
+
+= - É igual
+!= - É diferente
+-n - É não nula
+-z - É nula
+
+! - Não Lógico (NOT)
+-a - E lógico (AND)
+-o - Ou lógico (OR)
+
+
+
+VARIAVEL=8;
+
+if test "$VARIAVEL" -gt 10
+	then
+		echo "é maior que 10"
+elif test "$VARIAVEL" -eq 10
+	then 
+		echo "é igal a 10"
+else
+		echo "é menor que 10"
+
+fi
+
+
+Usando Função
+
+MinhaFuncao(){
+	VARIAVEL=$1
+	if test "$VARIAVEL" -gt 10
+		then
+			echo "é maior que 10"
+	elif test "$VARIAVEL" -eq 10
+		then 
+			echo "é igal a 10"
+	else
+			echo "é menor que 10"
+
+	fi
+
+}
+
+MinhaFuncao $1
+
+
+$ ./meuscript.sh 8

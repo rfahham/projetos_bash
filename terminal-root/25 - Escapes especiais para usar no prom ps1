@@ -1,0 +1,29 @@
+25 - Escapes especiais para usar no prompt (PS1)
+
+Escape	Lembrete	Expande para...
+\a	    Alerta	    Alerta (bipe)
+\d	    Data	    Data no formato "Dia-da-semana Mês Dia" (Sat Jan 15)
+\e	    Escape	    Caractere Esc
+\h	    Hostname	Nome da máquina sem o domínio (dhcp11)
+\H	    Hostname	Nome completo da máquina (dhcp11.empresa)
+\j	    Jobs	    Número de jobs ativos
+\l	    Tty	        Nome do terminal corrente (ttyp1)
+\n	    Newline	    Linha nova
+\r	    Return	    Retorno de carro
+\s	    Shell	    Nome do shell (basename $0)
+\t	    Time	    Horário no formato 24 horas HH:MM:SS
+\T	    Time	    Horário no formato 12 horas HH:MM:SS
+\@	    At	        Horário no formato 12 horas HH:MM am/pm
+\A	    At	        Horário no formato 24 horas HH:MM
+\u	    Usuário	    Login do usuário corrente
+\v	    Versão	    Versão do Bash (2.00)
+\V	    Versão	    Versão+subversão do Bash (2.00.0)
+\w	    Working Dir	Diretório corrente, caminho completo ($PWD)
+\W	    Working Dir	Diretório corrente, somente o último (basename $PWD)
+\!	    Histórico	Número do comando corrente no histórico
+\#	    Número	    Número do comando corrente
+\$	    ID	        Mostra "#" se for root, "$" se for usuário normal
+\nnn	Octal	    Caractere cujo octal é nnn
+\\	    Backslash	Barra invertida \ literal
+\[	    Escapes	    Inicia uma seqüência de escapes (tipo códigos de cores)
+\]	    Escapes	    Termina uma seqüência de escapes

@@ -1,0 +1,23 @@
+alias
+
+Editar o arquivo: .bash_aliases
+	$ vi .bash_aliases
+
+Executar
+	$source .bash_aliases
+
+
+$ alias
+alias a='ansible'
+alias c='clear'
+alias df='df -h'
+alias egrep='egrep --color=auto'
+alias find='find . -name'
+alias grep='grep --color=auto'
+alias list='tsuru app list'
+alias list-gcp='gcloud compute instances list'
+alias list-tsuru='tsuru app list'
+alias ls='ls -la --color'
+alias p='python'
+alias t='tsuru'
+alias tf='terraform'

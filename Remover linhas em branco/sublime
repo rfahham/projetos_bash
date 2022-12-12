@@ -1,0 +1,6 @@
+Find
+Replace...
+Habilitar expressão regular
+Find: ^[\n]
+Replace: em branco
+Replace All
