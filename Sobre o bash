@@ -27,7 +27,7 @@ $ cat /etc/shells
 
 Para mudar o shell padra
 
-$ chsh -s /bin/ash
+$ chsh -s /bin/bash
 
 Veja o Shell de todos os usuários do sistema
 

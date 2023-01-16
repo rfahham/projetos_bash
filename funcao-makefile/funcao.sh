@@ -12,7 +12,7 @@ Soma(){
 	read -p "Informe o primeiro número: " valor1
 	read -p "Informe o segundo número: " valor2
 	echo ""
-	echo "Primeiro número $valor1 e o segundo número é $valor2"
+	echo "Primeiro número é $valor1 e o segundo número é $valor2"
 
 	total=$(expr $valor1 + $valor2)
 	echo ""
@@ -30,7 +30,7 @@ Subtracao(){
 	read -p "Informe o primeiro número: " valor1
 	read -p "Informe o segundo número: " valor2
 	echo ""
-	echo "Primeiro número $valor1 e o segundo número é $valor2"
+	echo "Primeiro número é $valor1 e o segundo número é $valor2"
 
 	total=$(expr $valor1 - $valor2)
 	echo ""
@@ -48,7 +48,7 @@ Multiplicacao(){
 	read -p "Informe o primeiro número: " valor1
 	read -p "Informe o segundo número: " valor2
 	echo ""
-	echo "Primeiro número $valor1 e o segundo número é $valor2"
+	echo "Primeiro número é $valor1 e o segundo número é $valor2"
 
 	total=$(expr $valor1 \* $valor2)
 	echo ""
@@ -66,7 +66,7 @@ Divisao(){
 	read -p "Informe o primeiro número: " valor1
 	read -p "Informe o segundo número: " valor2
 	echo ""
-	echo "Primeiro número $valor1 e o segundo número é $valor2"
+	echo "Primeiro número é $valor1 e o segundo número é $valor2"
 
 	total=$(expr $valor1 / $valor2)
 	echo ""

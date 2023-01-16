@@ -5,9 +5,15 @@
 # Imprimindo só a data
 # Ex.: 2022-12-09
 data=$(date +%F)
-echo $data
 
-if [ ! -d "$data" ]
+# echo $data
+
+# if [ ! -d "$data" ]
+# then
+# 	mkdir "log - $data"
+# fi
+
+if [ ! -d log ]
 then
-	mkdir $data
+	mkdir log && cd log && mkdir $data
 fi

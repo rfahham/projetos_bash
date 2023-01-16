@@ -1,8 +1,9 @@
 Operadores
 
-
 le = Less than or equal
 
 ge = Greater than or equal
 
 https://www.computerhope.com/jargon/o/operator.htm
+
+-eq = equal = igual
