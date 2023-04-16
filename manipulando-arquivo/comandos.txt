@@ -1,0 +1,7 @@
+substitui o http por https
+
+echo "$(sed 's/http/http/g' hosts.txt)" > hosts.txt
+
+ou 
+
+sed -i 's/1/2/g' arq.txt

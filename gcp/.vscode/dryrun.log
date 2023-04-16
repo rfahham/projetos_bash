@@ -1,8 +1,10 @@
-make: Entering directory `/Users/ricardo.fahham/Documents/projetos/gcp'
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/ricardo.fahham/Documents/projetos/projetos_bash/gcp'
 clear
-echo "\n\033[33m\n----------------------------------------\033[0m"
-echo "make random - random-status-code.js"
-echo "make hosts - get_hosts_diferentes.js"
 echo "\033[33m----------------------------------------\033[0m"
-make: Leaving directory `/Users/ricardo.fahham/Documents/projetos/gcp'
+echo "make list - Lista as instâncias no GCP"
+echo "make start - Inicializa as instâncias no GCP"
+echo "make stop - Stopa as instâncias no GCP"
+echo "\033[33m----------------------------------------\033[0m"
+make: Leaving directory `/Users/ricardo.fahham/Documents/projetos/projetos_bash/gcp'
  
