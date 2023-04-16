@@ -97,7 +97,7 @@ if [ -z "${TOKEN}" ]; then
     echo "Token is empty!!!"
 else
     echo Arquivo "dep.tsuru" gerado com sucesso!
-    curl -s --request GET --header "PRIVATE-TOKEN: ${TOKEN}" "https://gitlab.globoi.com/api/v4/projects/1977/repository/files/Gopkg%2Etoml/raw?ref=${VERSION}" > go-dep.txt
+    curl -s --request GET --header "PRIVATE-TOKEN: ${TOKEN}" "https://" > go-dep.txt
     echo
 fi
 
