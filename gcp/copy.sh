@@ -11,7 +11,7 @@ echo -e " \033[0;32m ------------------------------- \033[0m"
 
 # for i in $ip
 # do
-#     scp ~/Downloads/cartola-api-criar-time.js ricardo_fahham_g_globo@$i:~
+#     scp ~/Downloads/<nome do arquivo> ricardo_fahham_g_globo@$i:~
 # done
 
 
@@ -22,7 +22,7 @@ name=$(gcloud compute instances list | grep gce-k6 | awk '{print $4}')
 for i in $name
 do
     "ssh" "ricardo_fahham_g_globo"@$i /bin/bash << EOF
-    sudo cp cartola-api-criar-time.js /tmp/k6-performance-tests/qa3/reqs_auth
+    sudo cp <nome do arquivo> /tmp/k6-performance-tests/qa3/reqs_auth
 EOF
 done
 

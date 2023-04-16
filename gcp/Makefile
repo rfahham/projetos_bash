@@ -30,7 +30,7 @@ start:
 	@echo "Inicializa as instâncias no GCP"
 	@echo "${COLOR_YELLOW}-------------------------------${COLOR_RESET}"
 	@echo ""
-	gcloud compute instances start gce-k6-0-prod --zone=southamerica-east1-a && gcloud compute instances start gce-k6-1-prod --zone=southamerica-east1-a && gcloud compute instances start gce-prometheus-prod --zone=southamerica-east1-a && echo "${COLOR_GREEN}Instâncias Iniciadas !!!${COLOR_RESET}"
+	 "${COLOR_GREEN}Instâncias Iniciadas !!!${COLOR_RESET}"
 	@echo "" 
 
 ## Stopa as instâncias no GCP
@@ -40,6 +40,6 @@ stop:
 	@echo "Parar as instâncias no GCP"
 	@echo "${COLOR_YELLOW}--------------------------${COLOR_RESET}"
 	@echo ""
-	gcloud compute instances stop gce-k6-0-prod --zone=southamerica-east1-a && gcloud compute instances stop gce-k6-1-prod --zone=southamerica-east1-a && gcloud compute instances stop gce-prometheus-prod --zone=southamerica-east1-a && echo "${COLOR_RED}Instâncias Paradas !!!${COLOR_RESET}"
+	 "${COLOR_RED}Instâncias Paradas !!!${COLOR_RESET}"
 	@echo "" 
 

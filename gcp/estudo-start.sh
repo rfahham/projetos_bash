@@ -8,8 +8,6 @@ gcloud compute instances list | awk '{print $2}' > zona.txt
 
 name=$(gcloud compute instances list | awk '{print $1}')
 zone=$(gcloud compute instances list | awk '{print $2}')
-# dic=( "gce-us-e1-grafana-k6-qa-prod" "gce-us-e1-influxdb-k6-qa-prod" "gce-us-e1-runner-k6-qa-prod" "gce-us-e1-workon-k6-qa-prod" "gce-k6-0-prod" )
-
 
 # echo $linha
 # echo $linhas
