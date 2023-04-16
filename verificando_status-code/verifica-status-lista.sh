@@ -31,4 +31,4 @@ done
 
 # Fontes:
 # https://www.alura.com.br/artigos/automatizando-tarefas-com-shell-script
-# https://www.alura.com.br/artigos/automatizando-tarefas-com-shell-script
+# https://www.vivaolinux.com.br/dica/Utilizando-arrays-em-shell-script
