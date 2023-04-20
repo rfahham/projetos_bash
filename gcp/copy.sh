@@ -7,6 +7,8 @@ echo -e " \033[0;32m ------------------------------- \033[0m"
 echo -e " \033[0;32m Copiando Instâncias no GCP ... \033[0m"
 echo -e " \033[0;32m ------------------------------- \033[0m"
 
+# copia um arquivo para as instâncias do GCP
+
 # ip=$(gcloud compute instances list | grep gce-k6 | awk '{print $4}')
 
 # for i in $ip

@@ -3,6 +3,6 @@ https://gigagloob.globo.com/
 https://workon.apps.tsuru.gcp.i.globo
 https://www.alura.com.br/
 https://www.globo.com/
-https://test.k6.io/
+https://workon.apps.tsuru.gcp.i.globo//
 https://www.webassessor.com/
 https://globoplay.globo.com/
