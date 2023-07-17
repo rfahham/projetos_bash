@@ -16,8 +16,6 @@ do
     gcloud compute instances start $i --zone=southamerica-east1-a
 done
 
-# gcloud compute instances list
-
 echo -e " \033[0;32m ----------------------------- \033[0m"
-echo -e " \033[0;32m Instâncias Paradas no GCP !!! \033[0m"
+echo -e " \033[0;32m Instâncias Ligadas no GCP !!! \033[0m"
 echo -e " \033[0;32m ----------------------------- \033[0m"

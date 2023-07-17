@@ -8,7 +8,7 @@ token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYwODVhNDU1MGUx
 
 cenarios=("auth-time-info" "auth-time-salvar" "mercado-status" "auth-ligas" "auth-time" "cenario6" "cenario7")
 
-while [ $x -lt 1 ]
+while [ $x -lt 2 ]
 do
     CENARIO=${cenarios[x]}
     
@@ -39,19 +39,12 @@ do
     echo "}]," >> ./tmp/report.json
     echo "\"ferramenta\": \"K6\"" >> ./tmp/report.json
     echo "}" >> ./tmp/report.json
-    
-    # echo "" >> ./tmp/report.json Linha em branco
-
-    echo "Enviando resultado para o Report"
-
-    echo $token
-    echo $REPORT_URL
 
     command="curl -X POST -H \"Content-Type: application/json\" -d '$(cat tmp/report.json)' -H \"authorization: $token\" $REPORT_URL"
     echo $command
+    $command
 
-
-    let "x = x +1"
+    let "x = x + 1"
 
     sleep 10
 done

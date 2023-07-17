@@ -1,10 +1,10 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/ricardo.fahham/Documents/projetos/projetos_bash/gcp'
+make: Entering directory `/Users/ricardo.fahham/Documents/projetos_bash/gcp'
 clear
 echo "\033[33m----------------------------------------\033[0m"
 echo "make list - Lista as instâncias no GCP"
 echo "make start - Inicializa as instâncias no GCP"
 echo "make stop - Stopa as instâncias no GCP"
 echo "\033[33m----------------------------------------\033[0m"
-make: Leaving directory `/Users/ricardo.fahham/Documents/projetos/projetos_bash/gcp'
+make: Leaving directory `/Users/ricardo.fahham/Documents/projetos_bash/gcp'
  

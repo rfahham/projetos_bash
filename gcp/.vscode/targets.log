@@ -1,0 +1,348 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
+
+
+# Make data base, printed on Sun Jul  9 15:45:15 2023
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+ 
+CURDIR := /Users/ricardo.fahham/Documents/projetos_bash/gcp
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"pt-br","osLocale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"6ff4c721842b21ec94ff543dbdd127cd.pt-br","_translationsConfigFile":"/Users/ricardo.fahham/Library/Application Support/Code/clp/6ff4c721842b21ec94ff543dbdd127cd.pt-br/tcf.json","_cacheRoot":"/Users/ricardo.fahham/Library/Application Support/Code/clp/6ff4c721842b21ec94ff543dbdd127cd.pt-br","_resolvedLanguagePackCoreLocation":"/Users/ricardo.fahham/Library/Application Support/Code/clp/6ff4c721842b21ec94ff543dbdd127cd.pt-br/b380da4ef1ee00e224a15c1d4d9793e27c2b6302","_corruptedFile":"/Users/ricardo.fahham/Library/Application Support/Code/clp/6ff4c721842b21ec94ff543dbdd127cd.pt-br/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /Users/ricardo.fahham/Documents/projetos_bash/gcp
+# environment
+PATH = /Users/ricardo.fahham/Documents/google-cloud-sdk/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+# makefile (from `Makefile', line 4)
+COLOR_GREEN = \033[32m
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 7)
+PROJECT := TAAS - K6
+# environment
+LaunchInstanceID = 46DA7E35-3C75-4934-9DEF-C4E845E80729
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+LS_COLORS = di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Wd0E8dokpi/Listeners
+# automatic
+%F = $(notdir $%)
+# makefile (from `Makefile', line 5)
+COLOR_RED = \033[31m
+# environment
+PWD = /Users/ricardo.fahham/Documents/projetos_bash/gcp
+# makefile (from `Makefile', line 1)
+COLOR_RESET = \033[0m
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Developer/CommandLineTools/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/ricardo.fahham
+# makefile (from `Makefile', line 2)
+COLOR_COMMAND = \033[36m
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/ricardo.fahham/Library/Application Support/Code/CachedData/b380da4ef1ee00e224a15c1d4d9793e27c2b6302
+# environment
+LOGNAME = ricardo.fahham
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/ricardo.fahham/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 3)
+COLOR_YELLOW = \033[33m
+# environment
+XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = ricardo.fahham
+# makefile
+.DEFAULT_GOAL := lista
+# default
+MAKECMDGOALS := all
+# environment
+TERM_SESSION_ID = w5t0p1:0674B53F-CADF-4EA4-A7DF-463A3B94E6D7
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/k4/6xtndhs97794htgqldktd4wh0000gp/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/ricardo.fahham/Library/Application Support/Code/1.79-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 3.4.19
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.18482608.18482614.7A5360AA-4A95-4AF1-B129-BA3672166863
+# environment
+LC_TERMINAL_VERSION = 3.4.19
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+ITERM_SESSION_ID = w5t0p1:0674B53F-CADF-4EA4-A7DF-463A3B94E6D7
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+COLORFGBG = 7;0
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F6:0x0:0x47
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186b4
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 78756
+# variable set hash-table stats:
+# Load=89/1024=9%, Rehash=0, Collisions=5/113=4%
+
+# Pattern-specific Variable Values
+ 
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 1497481): 16 files, no impossibilities.
+
+# 16 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+stop:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 40):
+	clear
+	@echo "${COLOR_YELLOW}--------------------------${COLOR_RESET}"
+	@echo "Parar as instâncias no GCP"
+	@echo "${COLOR_YELLOW}--------------------------${COLOR_RESET}"
+	@echo ""
+	"${COLOR_RED}Instâncias Paradas !!!${COLOR_RESET}"
+	@echo "" 
+	
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2023-05-21 14:22:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+start:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 30):
+	clear
+	@echo "${COLOR_YELLOW}-------------------------------${COLOR_RESET}"
+	@echo "Inicializa as instâncias no GCP"
+	@echo "${COLOR_YELLOW}-------------------------------${COLOR_RESET}"
+	@echo ""
+	"${COLOR_GREEN}Instâncias Iniciadas !!!${COLOR_RESET}"
+	@echo "" 
+	
+
+help:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@echo "\n${COLOR_YELLOW}\n------------\n${PROJECT}\n------------\n${COLOR_RESET}"
+	@awk '/^[a-zA-Z\-\_0-9\.%]+:/ { \
+	helpMessage = match(lastLine, /^## (.*)/); \
+	if (helpMessage) { \
+	helpCommand = substr($$1, 0, index($$1, ":")); \
+	helpMessage = substr(lastLine, RSTART + 3, RLENGTH); \
+	printf "${COLOR_COMMAND}$$ make %s${COLOR_RESET} %s\n", helpCommand, helpMessage; \
+	} \
+	} \
+	{ lastLine = $$0 }' $(MAKEFILE_LIST) | sort
+	@printf "\n\n"
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kill:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 50):
+	clear
+	@echo "${COLOR_YELLOW}--------------------------${COLOR_RESET}"
+	@echo "Parar os processo do K6 nas instâncias"
+	@echo "${COLOR_YELLOW}--------------------------${COLOR_RESET}"
+	@echo ""
+	"${COLOR_RED}Instâncias Paradas !!!${COLOR_RESET}"
+	@echo "" 
+	
+
+list:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 20):
+	clear
+	@echo "${COLOR_YELLOW}--------------------------${COLOR_RESET}"
+	@echo "Lista as instâncias no GCP"
+	@echo "${COLOR_YELLOW}--------------------------${COLOR_RESET}"
+	@echo ""
+	gcloud compute instances list
+	@echo "" 
+	
+
+lista:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 11):
+	clear
+	@echo "${COLOR_YELLOW}----------------------------------------${COLOR_RESET}"
+	@echo "make list - Lista as instâncias no GCP"
+	@echo "make start - Inicializa as instâncias no GCP"
+	@echo "make stop - Stopa as instâncias no GCP"
+	@echo "${COLOR_YELLOW}----------------------------------------${COLOR_RESET}"
+	
+
+# files hash-table stats:
+# Load=10/1024=1%, Rehash=0, Collisions=0/22=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sun Jul  9 15:45:15 2023
+
+ 
