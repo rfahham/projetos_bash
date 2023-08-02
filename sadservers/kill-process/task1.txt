@@ -1,0 +1,29 @@
+1. Você pode usar ps para listar todos os processos e ver se vê algo relacionado, por exemplo com: 
+
+	ps auxf
+
+Ignore os processos do sistema [entre colchetes].
+
+Uma maneira melhor é usar o comando para listar os arquivos abertos: 
+	lsof.
+
+2.Encontre o nome (primeira coluna) e o ID do processo (PID, segunda coluna) do processo relacionado a /var/log/bad.log executando 
+
+	lsof e filtrando as linhas para aquela(s) que contém(m) bad.log.
+
+Você também pode usar o comando "fuser" para localizar rapidamente o processo ofensivo: 
+
+	fuser /var/log/bad.log
+
+3.Execute o comando e obtenha o PID (segunda coluna). 
+
+	$ lsof | grep bad.log
+
+Com o PID do processo, não é necessário, mas podemos encontrar seu diretório de trabalho atual (localização do programa) fazendo pwdx PIDou para mais detalhes: 
+	$ lsof -p PID e verifique a linha cwd
+
+Isso nos permitirá verificar sua propriedade e talvez inspecionar seu código ofensivo se for um script (não um binário).
+
+
+4. Solução: Usando o PID encontrado, finalize (mata) o processo com:
+	kill -9 número do PID

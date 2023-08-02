@@ -1,0 +1,18 @@
+1. Para pegar o primeiro campo (IP) do arquivo, você pode fazer awk '{print $1}' access.logou usando "cut" com delimitador de espaço (-d'') e pegando o primeiro campo (-f1): 
+	$ cat access.log | cut -d' ' -f1
+	ou 
+	$ awk '{print $1}' access.log
+
+2. Após a etapa anterior, você deseja classificar os IPs para que coexistam e possam ser contados:
+	$ cat access.log | awk '{print $1}' | sort
+
+3. Agora você deseja fazer a contagem com "uniq -c", então temos até agora:
+	$ awk '{print $1}' access.log | sort | uniq -c
+
+4. Finalmente você deseja classificar os resultados com "sort" (vai em ordem crescente) e obter o último (com "tail -1" por exemplo), ou classificar na ordem inversa com "sort -r" e obter o resultado superior: 
+	$ awk '{print $1}' access.log | sort |uniq -c | sort -r | head -1
+
+	$ awk '{print $1}' /home/admin/access.log | sort | uniq -c | sort -r | head -1 | awk '{print $2}' > result.txt
+
+Verificar o resultado:
+	$ cat result.txt
