@@ -13,8 +13,10 @@ ip=$(gcloud compute instances list | grep gce-k6 | awk '{print $4}')
 
 for i in $ip
 do
-    # ssh-keygen -R $i
-    scp ~/Documents/projetos_bash/monitor/monitor.sh ricardo_fahham_g_globo@$i:~
+    ssh-keygen -R $i
+    # scp ~/Documents/projetos_bash/monitor/monitor.sh ricardo_fahham_g_globo@$i:~
+    # scp ~/Downloads/k6-v0.46.0-linux-amd64.tar.gz ricardo_fahham_g_globo@$i:~
+    scp ~/Documents/projetos_bash/gcp/combate.js ricardo_fahham_g_globo@$i:~
 done
 
 
@@ -25,7 +27,8 @@ done
 # for i in $name
 # do
 #     "ssh" "ricardo_fahham_g_globo"@$i /bin/bash << EOF
-#     sudo cp <nome do arquivo> /tmp/k6-performance-tests/qa3/reqs_auth
+#     sudo tar -C /usr/local -xzf k6-v0.46.0-linux-amd64.tar.gz
+#     # sudo cp <nome do arquivo> /tmp/k6-performance-tests/qa3/reqs_auth
 # EOF
 # done
 
