@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Meu primeiro script
-
 echo "Olá, Mundo!"
 
 MinhaFuncao(){
