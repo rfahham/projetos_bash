@@ -1,13 +1,23 @@
+# Listando
+
+```bash
 alias
+```
 
-Editar o arquivo: .bash_aliases
-	$ vi .bash_aliases
+## Editar o arquivo: .bash_aliases
 
-Executar
-	$source .bash_aliases
+```bash
+vi .bash_aliases
+```
 
+## Releitura do shell
 
-$ alias
+```bash
+source .bash_aliases
+```
+
+```bash
+alias
 alias a='ansible'
 alias c='clear'
 alias df='df -h'
@@ -21,3 +31,4 @@ alias ls='ls -la --color'
 alias p='python'
 alias t='tsuru'
 alias tf='terraform'
+```
