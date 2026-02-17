@@ -210,3 +210,4 @@ Próximos passos:
 * Como tratar erros corretamente
 * Como usar parâmetros (`$1`, `$2`, etc.)
 * Como integrar com cron (agendamento automático)
+
