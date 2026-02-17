@@ -1,8 +1,8 @@
-https://cartola.globo.com
-https://gigagloob.globo.com/
-https://workon.apps.tsuru.gcp.i.globo
-https://www.alura.com.br/
-https://www.globo.com/
-https://workon.apps.tsuru.gcp.i.globo//
-https://www.webassessor.com/
-https://globoplay.globo.com/
+http://cartola.globo.com
+http://gigagloob.globo.com/
+http://workon.apps.tsuru.gcp.i.globo
+http://www.alura.com.br/
+http://www.globo.com/
+http://workon.apps.tsuru.gcp.i.globo//
+http://www.webassessor.com/
+http://globoplay.globo.com/
