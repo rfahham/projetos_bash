@@ -1,3 +1,18 @@
+# Printenv
+
+O comando printenv exibe as variáveis de ambiente do sistema.
+
+Ele mostra todas as variáveis que estão disponíveis para o processo atual (shell).
+
+## Comando
+
+```bash
+printenv
+```
+
+## Saída
+
+```bash
 TERM_SESSION_ID=w0t0p0:7F09968B-8417-4A1B-B5CC-D5873A9D58FE
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.hRUnvBUqaW/Listeners
 LC_TERMINAL_VERSION=3.4.10
@@ -23,3 +38,4 @@ __CF_USER_TEXT_ENCODING=0x0:0:71
 SHLVL=1
 OLDPWD=/Users/ricardo.fahham/Documents/Sublime 2021
 _=/usr/bin/env
+```
